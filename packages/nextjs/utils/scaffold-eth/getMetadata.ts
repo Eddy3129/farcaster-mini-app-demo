@@ -81,6 +81,7 @@ export const getMetadata = ({
     },
     other: {
       "fc:miniapp": buildMiniappEmbed(imageUrl, imageRelativePath, title, baseUrl),
+      "base:app_id": "69456c25d77c069a945be157",
     },
   };
 };
