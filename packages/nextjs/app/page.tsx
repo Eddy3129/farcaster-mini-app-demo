@@ -1,6 +1,6 @@
 "use client";
 
-import { CSSProperties, useState } from "react";
+import { useState } from "react";
 import { EtherInput } from "@scaffold-ui/components";
 import type { NextPage } from "next";
 import { parseEther } from "viem";
