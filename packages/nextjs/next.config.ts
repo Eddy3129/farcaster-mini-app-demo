@@ -14,6 +14,15 @@ const nextConfig: NextConfig = {
     config.externals.push("pino-pretty", "lokijs", "encoding");
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: "/.well-known/farcaster.json",
+        destination: "https://api.farcaster.xyz/miniapps/hosted-manifest/019b371c-821c-f144-e69d-711a1192a80e",
+        permanent: false, // 307 temporary redirect
+      },
+    ];
+  },
 };
 
 const isIpfs = process.env.NEXT_PUBLIC_IPFS_BUILD === "true";
